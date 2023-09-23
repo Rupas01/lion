@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lion.css">
+    <title>lion</title>
+</head>
+
+<body>
+    <div class="total">
+        <div class="mainContainer">
+            <div class="lioncontainer">
+                <img src="lion-wild.gif" alt="lion" class="lionContainer" id="playButton" onclick="audio.play()">
+                <audio id="sound" src="roar.mp3"></audio>
+            </div>
+            <div class="shinchanContainer">
+                <div class="commentBox">
+                    that's a lion!.. don't go near it will eat you
+                </div>
+                <div class="shinchan">
+                    <img src="shinchan.png" alt="shinchan" id="shinchan">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const audio = new Audio()
+        audio.src = "roar.mp3"
+    </script>
+</body>
+
+</html>
